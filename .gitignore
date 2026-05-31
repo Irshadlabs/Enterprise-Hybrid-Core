@@ -1,0 +1,25 @@
+# ========================================================================
+# Target:      Git Ignore & Security Masking for Enterprise Hybrid Core
+# Author:      Mohammed Irshad
+# ========================================================================
+
+# 1. Block Local Testing & Packet Tracer Cache
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# 2. Block Terraform Local State & Credentials (CRITICAL SAFETY)
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+
+# 3. Block Private Keys & Secrets
+*.pem
+*.key
+*.id_rsa
+secrets.txt
+credentials/
