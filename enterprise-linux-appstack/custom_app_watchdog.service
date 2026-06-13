@@ -1,0 +1,24 @@
+# ========================================================================
+# Description: Systemd Service Unit Configuration for Backend App Watchdog
+# Target Stack: Linux Application Layer & Automation Diagnostics
+# Author:      Mohammed Irshad (Cloud & Network Support Engineer)
+# ========================================================================
+
+[Unit]
+Description=Enterprise Core Application Backend Engine
+After=network.target nginx.service
+
+[Service]
+Type=simple
+User=mdirshad
+WorkingDirectory=/home/mdirshad/enterprise-hybrid-core/sysops-automation-toolkit
+ExecStart=/home/mdirshad/enterprise-hybrid-core/sysops-automation-toolkit/cloud_resource_monitor.sh
+
+# Operational Reliability Parameters (The Support Layer)
+Restart=on-failure
+RestartSec=5s
+StandardOutput=append:/var/log/nginx/app_access.log
+StandardError=append:/var/log/nginx/app_error.log
+
+[Install]
+WantedBy=multi-user.target
