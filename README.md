@@ -40,3 +40,5 @@ chmod +x core_netops_menu.sh
 
 # Run the dashboard
 ./core_netops_menu.sh
+
+
