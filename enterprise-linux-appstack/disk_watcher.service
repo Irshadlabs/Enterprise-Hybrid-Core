@@ -1,0 +1,13 @@
+[Unit]
+Description=Enterprise Production Disk Space Watchdog Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/mdirshad/enterprise-hybrid-core/sysops-automation-toolkit/automated_disk_monitor.sh
+Restart=on-failure
+RestartSec=30
+User=mdirshad
+
+[Install]
+WantedBy=multi-user.target
