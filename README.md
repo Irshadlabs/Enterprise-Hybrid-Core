@@ -27,18 +27,6 @@ I have organized everything into clean, separate folders so it is easy to naviga
 
 ---
 
-## 🚀 How to Run the Monitoring Dashboard
 
-If you want to test the interactive administrative console locally on a Linux server, follow these quick steps:
-
-```bash
-# Move to the toolkit directory
-cd ~/enterprise-hybrid-core/sysops-automation-toolkit
-
-# Give execution permission to the master script
-chmod +x core_netops_menu.sh
-
-# Run the dashboard
-./core_netops_menu.sh
 
 
