@@ -1,5 +1,6 @@
 # SysOps Automation Toolkit Guide
 
+> **Status:** Active & Maintained Utilities | **Last Audit:** July 2026
 This directory contains production-ready system automation utilities managed by Mohammed Irshad.
 
 ## Available Tools
